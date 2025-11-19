@@ -39,4 +39,15 @@ public class FabShoppeController {
         return new ResponseEntity<>(transactionDtoMono, HttpStatus.OK);
     }
 
+
+    public Flux<TransactionDto> getProductTransactionsError() {
+        Flux<TransactionDto> transactionDtoFlux = null;
+        try{
+            transactionDtoFlux = fabShoppeService.getProductTransactionError();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return transactionDtoFlux;
+    }
+
 }

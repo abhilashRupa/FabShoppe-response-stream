@@ -30,4 +30,13 @@ public class FabShoppeService {
 
 
     }
+
+    public Flux<TransactionDto> getProductTransactionError() throws Exception {
+
+        Flux<Transaction> transactionFlux = fabShoppeRepository.findAllTransactions();
+        Flux<TransactionDto> transactionDtoFlux = transactionFlux.map(TransactionDto::entityToDto);
+        Exception exception = new RuntimeException();
+
+        throw exception;
+    }
 }

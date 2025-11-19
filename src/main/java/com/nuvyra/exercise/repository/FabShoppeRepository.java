@@ -18,14 +18,14 @@ public class FabShoppeRepository {
     "FS000", "FS001", "FS002", "FS003", "FS004", "FS005", "FS006", "FS007", "FS008", "FS009"
   };
   private Integer[] itemIds = {
-    10001, 10002, 10003, 10004, 10004, 10005, 10006, 10007, 10008, 10009, 10010
+    10001, 10002, 10003, 10004, 10005, 10006, 10007, 10008, 10009, 10010
   };
 
   private final Random random = new Random();
 
   public Flux<Transaction> findAllTransactions() {
 
-    return Flux.range(0, 9)
+    return Flux.range(0, 10)
         .delayElements(Duration.ofSeconds(2))
         .doOnNext(i -> log.info("Transaction count: " + (i + 1)))
         .map(
