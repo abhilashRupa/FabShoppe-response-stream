@@ -1,6 +1,6 @@
 package com.nuvyra.exercise.repository;
 
-import com.nuvyra.exercise.transaction.Transaction;
+import com.nuvyra.exercise.entity.Transaction;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Flux;

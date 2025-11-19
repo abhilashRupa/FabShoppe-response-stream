@@ -2,7 +2,7 @@ package com.nuvyra.exercise.service;
 
 import com.nuvyra.exercise.dto.TransactionDto;
 import com.nuvyra.exercise.repository.FabShoppeRepository;
-import com.nuvyra.exercise.transaction.Transaction;
+import com.nuvyra.exercise.entity.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

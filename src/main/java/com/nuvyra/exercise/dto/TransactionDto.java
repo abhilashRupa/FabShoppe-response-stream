@@ -1,6 +1,6 @@
 package com.nuvyra.exercise.dto;
 
-import com.nuvyra.exercise.transaction.Transaction;
+import com.nuvyra.exercise.entity.Transaction;
 import lombok.*;
 
 import java.time.LocalDateTime;

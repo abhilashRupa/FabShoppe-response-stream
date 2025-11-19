@@ -1,4 +1,4 @@
-package com.nuvyra.exercise.transaction;
+package com.nuvyra.exercise.entity;
 
 import java.time.LocalDateTime;
 
